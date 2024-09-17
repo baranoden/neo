@@ -1,0 +1,17 @@
+{
+  "name": "neo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "neo": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.0.0"
+  }
+}
