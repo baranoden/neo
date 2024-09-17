@@ -10,13 +10,13 @@ async function init() {
     {
       type: "list",
       name: "projectType",
-      message: "Proje türünü seçin:",
+      message: "Select Project:",
       choices: ["React-native - Expo - Typescript - Zustand", "Express"],
     },
     {
       type: "input",
       name: "projectName",
-      message: "Proje adı:",
+      message: "Name of the Project:",
       default: "my-app",
     },
   ]);
@@ -29,9 +29,9 @@ async function init() {
 
   try {
     await fs.copy(projectTemplate, destination);
-    console.log(`Proje başarıyla oluşturuldu: ${answers.projectName}`);
+    console.log(`Here you go: ${answers.projectName}`);
   } catch (err) {
-    console.error("Bir hata oluştu:", err);
+    console.error("Having some problems:", err);
   }
 }
 
